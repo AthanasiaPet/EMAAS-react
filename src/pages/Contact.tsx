@@ -38,15 +38,15 @@ function Contact() {
         e.preventDefault()
 
         emailjs.send(
-            'service_pupyoqt',
-            'template_92frpav',
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
             {
                 name: formData.name,
                 from_email: formData.email,
                 subject: formData.subject,
                 message: formData.message,
             },
-            'Bm_24Sehb1mwFlKpu'
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
         ).then(() => {
             setSubmitted(true)
         }).catch((error) => {
