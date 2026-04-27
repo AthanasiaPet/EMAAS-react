@@ -11,6 +11,11 @@ import GrandPhd from './pages/GrandPhd'
 import Contact from './pages/Contact'
 import Activities from './pages/Activities'
 import Nous from './pages/Nous'
+import Projects from './pages/Projects'
+import PhotoGallery from './pages/PhotoGallery'
+import LatestPublications from './pages/LatestPublications'
+import NotFound from './pages/NotFound'
+
 
 function App() {
     return (
@@ -27,6 +32,11 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/activities" element={<Activities />} />
                 <Route path="/nous" element={<Nous />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/photo-gallery" element={<PhotoGallery />} />
+                <Route path="/latest-publications" element={<LatestPublications />} />
+                <Route path="*" element={<NotFound />} />
+
             </Routes>
             <Footer />
         </BrowserRouter>

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function CTA() {
     return (
         <section className="bg-[#1b2a3b] px-6 py-24 text-center">
@@ -13,12 +15,18 @@ function CTA() {
                     EMAAS membership is open to distinguished scientists, scholars, and artists committed to advancing knowledge and fostering international collaboration.
                 </p>
                 <div className="flex gap-4 justify-center flex-wrap">
-                    <button className="bg-[#c9a96e] text-[#1b2a3b] text-[11px] uppercase tracking-wider px-8 py-3 font-semibold hover:bg-[#b8935a] transition-colors">
+                    <Link
+                        to="/membership"
+                        className="bg-[#c9a96e] text-[#1b2a3b] text-[11px] uppercase tracking-wider px-8 py-3 font-semibold hover:bg-[#b8935a] transition-colors"
+                    >
                         Apply Now
-                    </button>
-                    <button className="border border-[#c9a96e] text-[#c9a96e] text-[11px] uppercase tracking-wider px-8 py-3 hover:bg-[#c9a96e20] transition-colors">
+                    </Link>
+                    <Link
+                        to="/contact"
+                        className="border border-[#c9a96e] text-[#c9a96e] text-[11px] uppercase tracking-wider px-8 py-3 hover:bg-[#c9a96e20] transition-colors"
+                    >
                         Contact Us
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const cards = [
     {
         title: 'Our Mission',
@@ -15,7 +17,7 @@ const cards = [
 
 function About() {
     return (
-        <section className="bg-[#f8f6f1] px-6 py-24">
+        <section id="about" className="bg-[#f8f6f1] px-6 py-24">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
 
                 {/* Left side - Text */}
@@ -31,9 +33,12 @@ function About() {
                     <p className="text-gray-500 text-base leading-relaxed mb-8">
                         EMAAS builds an action-oriented global network of scholars who forge powerful bonds with each other and with their communities around the globe, embracing all human differences while building upon our commonalities.
                     </p>
-                    <button className="bg-[#1b2a3b] text-[#c9a96e] text-[11px] uppercase tracking-wider px-7 py-3 hover:bg-[#2c4a6e] transition-colors">
+                    <Link
+                        to="/structure"
+                        className="bg-[#1b2a3b] text-[#c9a96e] text-[11px] uppercase tracking-wider px-7 py-3 hover:bg-[#2c4a6e] transition-colors"
+                    >
                         Learn Our History
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Right side - Cards */}

@@ -1,13 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-
-const navLinks = [
-    'About',
-    'Structure',
-    'Members',
-    'Activities',
-    'Grand PhD',
-]
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -15,7 +8,7 @@ function Footer() {
             <div className="max-w-6xl mx-auto">
 
                 {/* Top grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
 
                     {/* Column 1 - Brand */}
                     <div>
@@ -30,34 +23,54 @@ function Footer() {
                         </p>
                     </div>
 
-                    {/* Column 2 - Navigation */}
+                    {/* Column 2 - Academy */}
                     <div>
-                        <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Navigation</p>
+                        <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Academy</p>
                         <div className="flex flex-col gap-3">
-                            {navLinks.map((link, index) => (
-                                <a key={index} href="#" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">
-                                    {link}
-                                </a>
-                            ))}
+                            <Link to="/structure" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Structure</Link>
+                            <Link to="/presidium" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Presidium</Link>
+                            <Link to="/advisory-council" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Advisory Council</Link>
+                            <Link to="/grand-phd" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Grand PhD</Link>
                         </div>
                     </div>
 
-                    {/* Column 3 - Contact */}
+                    {/* Column 3 - Members & Activities */}
+                    <div>
+                        <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Members</p>
+                        <div className="flex flex-col gap-3 mb-6">
+                            <Link to="/members" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Members List</Link>
+                            <Link to="/membership" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Membership</Link>
+                        </div>
+                        <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Activities</p>
+                        <div className="flex flex-col gap-3">
+                            <Link to="/projects" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Projects</Link>
+                            <Link to="/photo-gallery" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Photo Gallery</Link>
+                        </div>
+                    </div>
+
+                    {/* Column 4 - Contact */}
                     <div>
                         <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Contact</p>
-                        <div className="flex flex-col gap-3">
-                            <div className="flex items-center gap-3">
-                                <FontAwesomeIcon icon={faLocationDot} className="text-[#c9a96e] text-sm w-4" />
+                        <div className="flex flex-col gap-4">
+                            <div className="flex items-start gap-3">
+                                <FontAwesomeIcon icon={faLocationDot} className="text-[#c9a96e] text-sm w-4 mt-0.5" />
                                 <span className="text-gray-500 text-sm">Sparta, Greece</span>
                             </div>
-                            <div className="flex items-center gap-3">
-                                <FontAwesomeIcon icon={faLocationDot} className="text-[#c9a96e] text-sm w-4" />
+                            <div className="flex items-start gap-3">
+                                <FontAwesomeIcon icon={faLocationDot} className="text-[#c9a96e] text-sm w-4 mt-0.5" />
                                 <span className="text-gray-500 text-sm">Lausanne, Switzerland</span>
                             </div>
-                            <div className="flex items-center gap-3">
-                                <FontAwesomeIcon icon={faEnvelope} className="text-[#c9a96e] text-sm w-4" />
-                                <a href="#" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Contact Form</a>
+                            <div className="flex items-start gap-3">
+                                <FontAwesomeIcon icon={faEnvelope} className="text-[#c9a96e] text-sm w-4 mt-0.5" />
+                                <Link to="/contact" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Contact Form</Link>
                             </div>
+                        </div>
+
+                        {/* Nous */}
+                        <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mt-6 mb-5 font-medium">Nous</p>
+                        <div className="flex flex-col gap-3">
+                            <Link to="/nous" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">About Nous</Link>
+                            <Link to="/latest-publications" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Latest Publications</Link>
                         </div>
                     </div>
 

@@ -1,6 +1,10 @@
 import logo from '../assets/logo.png'
 
 function Hero() {
+    const scrollToAbout = () => {
+        document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
+    }
+
     return (
         <section className="bg-[#1b2a3b] px-6 py-24">
             <div className="max-w-6xl mx-auto flex flex-col items-center">
@@ -9,7 +13,7 @@ function Hero() {
                 <img
                     src={logo}
                     alt="EMAAS Logo"
-                    className="w-90 h-45 object-contain mb-10"
+                    className="w-48 h-48 object-contain mb-10"
                 />
 
                 {/* Content grid */}
@@ -27,14 +31,12 @@ function Hero() {
                         <p className="text-gray-400 text-base leading-relaxed mb-8 max-w-md">
                             A worldwide academy of ballot-selected academicians advancing knowledge across the Euro-Mediterranean region and beyond.
                         </p>
-                        <div className="flex gap-4 flex-wrap">
-                            <button className="bg-[#c9a96e] text-[#1b2a3b] text-[11px] uppercase tracking-wider px-7 py-3 font-semibold hover:bg-[#b8935a] transition-colors">
-                                Apply for Membership
-                            </button>
-                            <button className="border border-[#c9a96e] text-[#c9a96e] text-[11px] uppercase tracking-wider px-7 py-3 hover:bg-[#c9a96e20] transition-colors">
-                                Explore Our Work
-                            </button>
-                        </div>
+                        <button
+                            onClick={scrollToAbout}
+                            className="border border-[#c9a96e] text-[#c9a96e] text-[11px] uppercase tracking-wider px-7 py-3 hover:bg-[#c9a96e20] transition-colors"
+                        >
+                            Explore Our Work
+                        </button>
                     </div>
 
                     {/* Right side - Stats */}
