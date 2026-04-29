@@ -43,7 +43,7 @@ function Navbar() {
                             <img src={nano_logo} alt="EMAAS Logo" className="h-12 w-12 object-contain" />
                             <div>
                                 <p className="font-bold text-[#1b2a3b] text-sm leading-tight">EMAAS</p>
-                                <p className="text-[9px] uppercase tracking-widest text-gray-400">Euro Mediterranean Academy</p>
+                                <p className="text-[9px] uppercase tracking-widest text-gray-400">Euro Mediterranean Academy of arts and sciences</p>
                             </div>
                         </div>
                     </Link>
