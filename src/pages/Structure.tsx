@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPalette, faFlask } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 function Structure() {
     return (
@@ -64,7 +65,12 @@ function Structure() {
 
                     {/* Presidium */}
                     <div className="bg-white border border-gray-200 border-l-4 border-l-[#c9a96e] px-8 py-4 w-56 text-center">
-                        <p className="font-serif text-base font-semibold text-[#1b2a3b]">Presidium</p>
+                        <Link to="/presidium">
+                        <p className="font-serif text-base font-semibold text-[#1b2a3b]">
+                        Presidium
+                    </p>
+                        </Link>
+
                         <p className="text-[11px] text-gray-400 mt-1">Executive leadership</p>
                     </div>
                     <div className="w-0.5 h-8 bg-[#c9a96e]"></div>
@@ -78,13 +84,21 @@ function Structure() {
                         {/* Members */}
                         <div className="flex w-full justify-around pt-8">
                             <div className="bg-white border border-gray-200 border-l-4 border-l-[#c9a96e] px-6 py-4 w-44 text-center">
-                                <p className="font-serif text-sm font-semibold text-[#1b2a3b]">Members</p>
+                                <Link to="/members">
+                                    <p className="font-serif text-sm font-semibold text-[#1b2a3b] ">
+                                        Members
+                                    </p>
+                                </Link>
                                 <p className="text-[11px] text-gray-400 mt-1">Ballot-selected academicians</p>
                             </div>
 
                             {/* Advisory Council */}
                             <div className="bg-white border border-gray-200 border-l-4 border-l-[#c9a96e] px-6 py-4 w-44 text-center">
-                                <p className="font-serif text-sm font-semibold text-[#1b2a3b]">Advisory Council</p>
+                                <Link to="/advisory-council">
+                                <p className="font-serif text-sm font-semibold text-[#1b2a3b] ">
+                                    Advisory Council
+                                </p>
+                                </Link>
                                 <p className="text-[11px] text-gray-400 mt-1">Strategic guidance</p>
                             </div>
                         </div>

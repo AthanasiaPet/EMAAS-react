@@ -40,7 +40,7 @@ function Navbar() {
                     {/* Logo */}
                     <Link to="/" onClick={closeMobile}>
                         <div className="flex items-center gap-3">
-                            <img src={nano_logo} alt="EMAAS Logo" className="h-12 w-12 object-contain" />
+                            <img src={nano_logo} alt="EMAAS Logo" className="h-18 w-26 object-contain" />
                             <div>
                                 <p className="font-bold text-[#1b2a3b] text-sm leading-tight">EMAAS</p>
                                 <p className="text-[9px] uppercase tracking-widest text-gray-400">Euro Mediterranean Academy of arts and sciences</p>
@@ -62,6 +62,20 @@ function Navbar() {
                                     <Link to="/structure" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-gray-600 hover:bg-gray-50 hover:text-[#8b5e3c] transition-colors">Structure</Link>
                                     <Link to="/presidium" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-gray-600 hover:bg-gray-50 hover:text-[#8b5e3c] transition-colors">Presidium</Link>
                                     <Link to="/advisory-council" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-gray-600 hover:bg-gray-50 hover:text-[#8b5e3c] transition-colors">Advisory Council</Link>
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Members Dropdown */}
+                        <div className="relative">
+                            <button onClick={() => toggleDropdown('members')} className="text-[11px] uppercase tracking-wider text-gray-600 hover:text-[#8b5e3c] transition-colors flex items-center gap-1">
+                                Members
+                                <FontAwesomeIcon icon={openDropdown === 'members' ? faChevronUp : faChevronDown} className="text-[9px]" />
+                            </button>
+                            {openDropdown === 'members' && (
+                                <div className="absolute top-8 left-0 bg-white border border-gray-200 w-48 shadow-md z-50">
+                                    <Link to="/members" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-gray-600 hover:bg-gray-50 hover:text-[#8b5e3c] transition-colors">Members List</Link>
+                                    <Link to="/membership" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-gray-600 hover:bg-gray-50 hover:text-[#8b5e3c] transition-colors">Membership</Link>
                                 </div>
                             )}
                         </div>
@@ -107,19 +121,7 @@ function Navbar() {
                             )}
                         </div>
 
-                        {/* Members Dropdown */}
-                        <div className="relative">
-                            <button onClick={() => toggleDropdown('members')} className="text-[11px] uppercase tracking-wider text-gray-600 hover:text-[#8b5e3c] transition-colors flex items-center gap-1">
-                                Members
-                                <FontAwesomeIcon icon={openDropdown === 'members' ? faChevronUp : faChevronDown} className="text-[9px]" />
-                            </button>
-                            {openDropdown === 'members' && (
-                                <div className="absolute top-8 left-0 bg-white border border-gray-200 w-48 shadow-md z-50">
-                                    <Link to="/members" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-gray-600 hover:bg-gray-50 hover:text-[#8b5e3c] transition-colors">Members List</Link>
-                                    <Link to="/membership" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-gray-600 hover:bg-gray-50 hover:text-[#8b5e3c] transition-colors">Membership</Link>
-                                </div>
-                            )}
-                        </div>
+
 
                         <Link to="/contact" className="text-[11px] uppercase tracking-wider text-gray-600 hover:text-[#8b5e3c] transition-colors">Contact</Link>
 
