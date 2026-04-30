@@ -34,7 +34,7 @@ function About() {
                         EMAAS builds an action-oriented global network of scholars who forge powerful bonds with each other and with their communities around the globe, embracing all human differences while building upon our commonalities.
                     </p>
                     <Link
-                        to="/structure"
+                        to="/history"
                         className="bg-[#1b2a3b] text-[#c9a96e] text-[11px] uppercase tracking-wider px-7 py-3 hover:bg-[#2c4a6e] transition-colors"
                     >
                         Learn Our History
