@@ -13,7 +13,7 @@ function Hero() {
                 <img
                     src={logo}
                     alt="EMAAS Logo"
-                    className="w-48 h-48 object-contain mb-10"
+                    className="w-78 h-48 object-contain mb-10"
                 />
 
                 {/* Content grid */}
