@@ -92,12 +92,12 @@ function GrandPhd() {
                         </ul>
                     </div>
 
-                    {/* Fee */}
-                    <div className="bg-[#1b2a3b] p-8 mb-8 text-center">
-                        <p className="text-[11px] uppercase tracking-wider text-[#c9a96e] mb-2">Administrative Fee</p>
-                        <p className="font-serif text-4xl font-bold text-white mb-2">€500</p>
-                        <p className="text-gray-400 text-sm">Covers all administrative and paperwork expenses</p>
-                    </div>
+                    {/*/!* Fee *!/*/}
+                    {/*<div className="bg-[#1b2a3b] p-8 mb-8 text-center">*/}
+                    {/*    <p className="text-[11px] uppercase tracking-wider text-[#c9a96e] mb-2">Administrative Fee</p>*/}
+                    {/*    <p className="font-serif text-4xl font-bold text-white mb-2">€500</p>*/}
+                    {/*    <p className="text-gray-400 text-sm">Covers all administrative and paperwork expenses</p>*/}
+                    {/*</div>*/}
 
                     {/* Contact */}
                     <div className="text-center">
