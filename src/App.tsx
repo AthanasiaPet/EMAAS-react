@@ -15,6 +15,7 @@ import Projects from './pages/Projects'
 import PhotoGallery from './pages/PhotoGallery'
 import LatestPublications from './pages/LatestPublications'
 import NotFound from './pages/NotFound'
+import History from './pages/History'
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
                 <Route path="/photo-gallery" element={<PhotoGallery />} />
                 <Route path="/latest-publications" element={<LatestPublications />} />
                 <Route path="*" element={<NotFound />} />
+                <Route path="/history" element={<History />} />
 
             </Routes>
             <Footer />
