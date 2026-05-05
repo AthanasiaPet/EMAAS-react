@@ -16,6 +16,8 @@ import PhotoGallery from './pages/PhotoGallery'
 import LatestPublications from './pages/LatestPublications'
 import NotFound from './pages/NotFound'
 import History from './pages/History'
+import News from './pages/News'
+
 
 
 function App() {
@@ -38,6 +40,7 @@ function App() {
                 <Route path="/latest-publications" element={<LatestPublications />} />
                 <Route path="*" element={<NotFound />} />
                 <Route path="/history" element={<History />} />
+                <Route path="/news" element={<News />} />
 
             </Routes>
             <Footer />

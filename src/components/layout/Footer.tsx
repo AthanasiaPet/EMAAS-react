@@ -36,14 +36,14 @@ function Footer() {
 
                     {/* Column 3 - Members & Activities */}
                     <div>
-                        <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Members</p>
+                        <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Research</p>
                         <div className="flex flex-col gap-3 mb-6">
-                            <Link to="/members" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Members List</Link>
-                            <Link to="/membership" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Membership</Link>
+                            <Link to="/projects" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Projects</Link>
+                            <Link to="/grand-phd" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Grand PhD</Link>
                         </div>
                         <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Activities</p>
                         <div className="flex flex-col gap-3">
-                            <Link to="/projects" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Projects</Link>
+                            <Link to="/news" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">News</Link>
                             <Link to="/photo-gallery" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Photo Gallery</Link>
                         </div>
                     </div>

@@ -82,12 +82,16 @@ function Navbar() {
 
                         {/* Research Dropdown */}
                         <div className="relative">
-                            <button onClick={() => toggleDropdown('research')} className="text-[11px] uppercase tracking-wider text-gray-600 hover:text-[#8b5e3c] transition-colors flex items-center gap-1">
+                            <button
+                                onClick={() => toggleDropdown('research')}
+                                className="text-[11px] uppercase tracking-wider text-gray-600 hover:text-[#8b5e3c] transition-colors flex items-center gap-1"
+                            >
                                 Research
                                 <FontAwesomeIcon icon={openDropdown === 'research' ? faChevronUp : faChevronDown} className="text-[9px]" />
                             </button>
                             {openDropdown === 'research' && (
                                 <div className="absolute top-8 left-0 bg-white border border-gray-200 w-48 shadow-md z-50">
+                                    <Link to="/projects" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-gray-600 hover:bg-gray-50 hover:text-[#8b5e3c] transition-colors">Projects</Link>
                                     <Link to="/grand-phd" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-gray-600 hover:bg-gray-50 hover:text-[#8b5e3c] transition-colors">Grand PhD</Link>
                                 </div>
                             )}
@@ -95,13 +99,16 @@ function Navbar() {
 
                         {/* Activities Dropdown */}
                         <div className="relative">
-                            <button onClick={() => toggleDropdown('activities')} className="text-[11px] uppercase tracking-wider text-gray-600 hover:text-[#8b5e3c] transition-colors flex items-center gap-1">
+                            <button
+                                onClick={() => toggleDropdown('activities')}
+                                className="text-[11px] uppercase tracking-wider text-gray-600 hover:text-[#8b5e3c] transition-colors flex items-center gap-1"
+                            >
                                 Activities
                                 <FontAwesomeIcon icon={openDropdown === 'activities' ? faChevronUp : faChevronDown} className="text-[9px]" />
                             </button>
                             {openDropdown === 'activities' && (
                                 <div className="absolute top-8 left-0 bg-white border border-gray-200 w-48 shadow-md z-50">
-                                    <Link to="/projects" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-gray-600 hover:bg-gray-50 hover:text-[#8b5e3c] transition-colors">Projects</Link>
+                                    <Link to="/news" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-gray-600 hover:bg-gray-50 hover:text-[#8b5e3c] transition-colors">News</Link>
                                     <Link to="/photo-gallery" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-gray-600 hover:bg-gray-50 hover:text-[#8b5e3c] transition-colors">Photo Gallery</Link>
                                 </div>
                             )}
@@ -148,11 +155,12 @@ function Navbar() {
 
                         <div className="border-t border-gray-100 my-2"></div>
                         <p className="text-[10px] uppercase tracking-widest text-gray-400 px-4 py-2">Research</p>
+                        <Link to="/projects" onClick={closeMobile} className="block px-6 py-2 text-[11px] uppercase tracking-wider text-gray-600 hover:text-[#8b5e3c] transition-colors">Projects</Link>
                         <Link to="/grand-phd" onClick={closeMobile} className="block px-6 py-2 text-[11px] uppercase tracking-wider text-gray-600 hover:text-[#8b5e3c] transition-colors">Grand PhD</Link>
 
                         <div className="border-t border-gray-100 my-2"></div>
                         <p className="text-[10px] uppercase tracking-widest text-gray-400 px-4 py-2">Activities</p>
-                        <Link to="/projects" onClick={closeMobile} className="block px-6 py-2 text-[11px] uppercase tracking-wider text-gray-600 hover:text-[#8b5e3c] transition-colors">Projects</Link>
+                        <Link to="/news" onClick={closeMobile} className="block px-6 py-2 text-[11px] uppercase tracking-wider text-gray-600 hover:text-[#8b5e3c] transition-colors">News</Link>
                         <Link to="/photo-gallery" onClick={closeMobile} className="block px-6 py-2 text-[11px] uppercase tracking-wider text-gray-600 hover:text-[#8b5e3c] transition-colors">Photo Gallery</Link>
 
                         <div className="border-t border-gray-100 my-2"></div>
