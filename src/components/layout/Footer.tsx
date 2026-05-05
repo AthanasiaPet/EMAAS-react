@@ -23,28 +23,32 @@ function Footer() {
                         </p>
                     </div>
 
-                    {/* Column 2 - Academy */}
+                    {/* Column 2 - Academy & Research */}
                     <div>
                         <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Academy</p>
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-3 mb-6">
                             <Link to="/structure" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Structure</Link>
                             <Link to="/presidium" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Presidium</Link>
                             <Link to="/advisory-council" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Advisory Council</Link>
+                        </div>
+                        <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Research</p>
+                        <div className="flex flex-col gap-3">
+                            <Link to="/projects" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Projects</Link>
                             <Link to="/grand-phd" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Grand PhD</Link>
                         </div>
                     </div>
 
-                    {/* Column 3 - Members & Activities */}
+                    {/* Column 3 - Activities & Members */}
                     <div>
-                        <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Research</p>
-                        <div className="flex flex-col gap-3 mb-6">
-                            <Link to="/projects" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Projects</Link>
-                            <Link to="/grand-phd" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Grand PhD</Link>
-                        </div>
                         <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Activities</p>
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-3 mb-6">
                             <Link to="/news" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">News</Link>
                             <Link to="/photo-gallery" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Photo Gallery</Link>
+                        </div>
+                        <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Members</p>
+                        <div className="flex flex-col gap-3">
+                            <Link to="/members" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Members List</Link>
+                            <Link to="/membership" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Membership</Link>
                         </div>
                     </div>
 
