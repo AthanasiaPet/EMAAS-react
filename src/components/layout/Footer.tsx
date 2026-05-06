@@ -52,10 +52,15 @@ function Footer() {
                         </div>
                     </div>
 
-                    {/* Column 4 - Contact */}
+                    {/* Column 4 - Nous & Contact */}
                     <div>
+                        <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Nous</p>
+                        <div className="flex flex-col gap-3 mb-6">
+                            <Link to="/nous" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">About Nous</Link>
+                            <Link to="/latest-publications" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Latest Publications</Link>
+                        </div>
                         <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mb-5 font-medium">Contact</p>
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-3">
                             <div className="flex items-start gap-3">
                                 <FontAwesomeIcon icon={faLocationDot} className="text-[#c9a96e] text-sm w-4 mt-0.5" />
                                 <span className="text-gray-500 text-sm">Sparta, Greece</span>
@@ -69,14 +74,9 @@ function Footer() {
                                 <Link to="/contact" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Contact Form</Link>
                             </div>
                         </div>
-
-                        {/* Nous */}
-                        <p className="text-[11px] uppercase tracking-[0.1em] text-[#c9a96e] mt-6 mb-5 font-medium">Nous</p>
-                        <div className="flex flex-col gap-3">
-                            <Link to="/nous" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">About Nous</Link>
-                            <Link to="/latest-publications" className="text-gray-500 text-sm hover:text-gray-300 transition-colors">Latest Publications</Link>
-                        </div>
                     </div>
+
+
 
                 </div>
 
