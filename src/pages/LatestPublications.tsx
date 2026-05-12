@@ -6,6 +6,18 @@ import teaching_notes from '../assets/articles/teaching_notes.pdf'
 
 const publications = [
     {
+        title: 'Teaching notes on exploring the impact of AI on Supply Chain Management',
+        date: '2026',
+        authors: 'Dr. Dimitris Stamoulis',
+        quotes: [
+            '"Operations and supply chain management is a key element in the improvement in productivity in business around the world." — Jacobs et al., 2011',
+            '"42% of firms adopting AI tools reported cost savings." — SCMR',
+        ],
+        excerpt: 'Supply Chain Management lays at the heart of every functioning business. The advent of digital technologies and especially big data and artificial intelligence have revolutionized the three main pillars of SCM: procurement, operations and logistics. This paper examines how AI is redefining procurement, transforming operations, and optimizing logistics — comprising a comprehensive set of teaching notes for those who choose to study and research this multi-disciplined topic that crosscuts business and technology sciences.',
+        tags: ['Supply Chain Management', 'Operations', 'Logistics', 'Big Data', 'Artificial Intelligence', 'Procurement', 'Digital Value Creation'],
+        link: teaching_notes,
+    },
+    {
         title: 'Profound, Deep, Extraordinary Minds: Vital Attributes of Human Knowledge',
         date: 'December 31, 2023',
         authors: 'Susie Michailidis & Paata Kervalishvili',
@@ -28,18 +40,7 @@ const publications = [
         tags: ['Arts', 'Humanities', 'Sciences', 'Mind'],
         link: beautiful_minds,
     },
-    {
-        title: 'Teaching notes on exploring the impact of AI on Supply Chain Management',
-        date: '2026',
-        authors: 'Dr. Dimitris Stamoulis, Assistant Professor, Head of Business and Technology Department, Webster University (Athens Campus)',
-        quotes: [
-            '"Operations and supply chain management is a key element in the improvement in productivity in business around the world." — Jacobs et al., 2011',
-            '"42% of firms adopting AI tools reported cost savings." — SCMR',
-        ],
-        excerpt: 'Supply Chain Management lays at the heart of every functioning business. The advent of digital technologies and especially big data and artificial intelligence have revolutionized the three main pillars of SCM: procurement, operations and logistics. This paper examines how AI is redefining procurement, transforming operations, and optimizing logistics — comprising a comprehensive set of teaching notes for those who choose to study and research this multi-disciplined topic that crosscuts business and technology sciences.',
-        tags: ['Supply Chain Management', 'Operations', 'Logistics', 'Big Data', 'Artificial Intelligence', 'Procurement', 'Digital Value Creation'],
-        link: teaching_notes,
-    },
+
 ]
 
 function LatestPublications() {
