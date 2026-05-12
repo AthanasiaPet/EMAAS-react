@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import beautiful_minds from '../assets/articles/beautiful_minds.pdf'
 import profound from '../assets/articles/profound.pdf'
+import teaching_notes from '../assets/articles/teaching_notes.pdf'
 
 const publications = [
     {
@@ -12,7 +13,7 @@ const publications = [
             '"The Energy of Mind is the Essence of Life." — Aristotle',
             '"It is the Power of the Mind to be unconquerable." — Seneca',
         ],
-        excerpt: 'Profound, Deep, Extraordinary Minds. But what do we mean by using these words? Depending on whom one asks, the question is either the most thoughtful question of human intellectual existence or else nothing more than a senseless appeal built on conceptual confusion…',
+        excerpt: 'Profound, Deep, Extraordinary Minds. But what do we mean by using these words? Depending on whom one asks, the question is either the most thoughtful question of human intellectual existence or else nothing more than a senseless appeal built on conceptual confusion.',
         tags: ['Mind', 'Knowledge', 'Philosophy'],
         link: profound,
     },
@@ -23,9 +24,21 @@ const publications = [
         quotes: [
             '"Everything should be beautiful in a human being. Both the face and appearance, soul and thoughts." — A. Chekhov',
         ],
-        excerpt: 'As serious societal trials of great consequence and complexity unfold, from the worldwide pandemic and uneven access to healthcare to global warming and forced migration, wars and the breakdown of democratic institutions, the arts, humanities and sciences within beautiful minds have a critical role to play, translating knowledge into solutions for social impacts…',
+        excerpt: 'As serious societal trials of great consequence and complexity unfold, from the worldwide pandemic and uneven access to healthcare to global warming and forced migration, wars and the breakdown of democratic institutions, the arts, humanities and sciences within beautiful minds have a critical role to play, translating knowledge into solutions for social impacts.',
         tags: ['Arts', 'Humanities', 'Sciences', 'Mind'],
         link: beautiful_minds,
+    },
+    {
+        title: 'Teaching notes on exploring the impact of AI on Supply Chain Management',
+        date: '2026',
+        authors: 'Dr. Dimitris Stamoulis, Assistant Professor, Head of Business and Technology Department, Webster University (Athens Campus)',
+        quotes: [
+            '"Operations and supply chain management is a key element in the improvement in productivity in business around the world." — Jacobs et al., 2011',
+            '"42% of firms adopting AI tools reported cost savings." — SCMR',
+        ],
+        excerpt: 'Supply Chain Management lays at the heart of every functioning business. The advent of digital technologies and especially big data and artificial intelligence have revolutionized the three main pillars of SCM: procurement, operations and logistics. This paper examines how AI is redefining procurement, transforming operations, and optimizing logistics — comprising a comprehensive set of teaching notes for those who choose to study and research this multi-disciplined topic that crosscuts business and technology sciences.',
+        tags: ['Supply Chain Management', 'Operations', 'Logistics', 'Big Data', 'Artificial Intelligence', 'Procurement', 'Digital Value Creation'],
+        link: teaching_notes,
     },
 ]
 
