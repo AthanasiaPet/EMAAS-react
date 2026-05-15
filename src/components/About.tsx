@@ -22,9 +22,9 @@ function About() {
 
                 {/* Left side - Text */}
                 <div>
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#8b5e3c] mb-4">About EMAAS</p>
-                    <div className="w-12 h-0.5 bg-[#c9a96e] mb-6"></div>
-                    <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#1b2a3b] leading-snug mb-6">
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#a0522d] mb-4">About EMAAS</p>
+                    <div className="w-12 h-0.5 bg-[#f6ac3d] mb-6"></div>
+                    <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#8b4513] leading-snug mb-6">
                         A Premier International Academy Setting the Standard for Global Knowledge
                     </h2>
                     <p className="text-gray-500 text-base leading-relaxed mb-5">
@@ -35,7 +35,7 @@ function About() {
                     </p>
                     <Link
                         to="/history"
-                        className="bg-[#1b2a3b] text-[#c9a96e] text-[11px] uppercase tracking-wider px-7 py-3 hover:bg-[#2c4a6e] transition-colors"
+                        className="bg-[#8b4513] text-[#f6ac3d] text-[11px] uppercase tracking-wider px-7 py-3 hover:bg-[#73390f] transition-colors"
                     >
                         Learn Our History
                     </Link>
@@ -44,8 +44,8 @@ function About() {
                 {/* Right side - Cards */}
                 <div className="flex flex-col gap-5">
                     {cards.map((card, index) => (
-                        <div key={index} className="bg-white border border-gray-200 border-l-4 border-l-[#c9a96e] p-7 hover:shadow-md transition-shadow">
-                            <h3 className="font-serif text-lg font-semibold text-[#1b2a3b] mb-3">{card.title}</h3>
+                        <div key={index} className="bg-white border border-gray-200 border-l-4 border-l-[#f6ac3d] p-7 hover:shadow-md transition-shadow">
+                            <h3 className="font-serif text-lg font-semibold text-[#8b4513] mb-3">{card.title}</h3>
                             <p className="text-gray-500 text-sm leading-relaxed">{card.text}</p>
                         </div>
                     ))}

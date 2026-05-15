@@ -31,9 +31,9 @@ function Goals() {
 
                 {/* Section header */}
                 <div className="text-center mb-14">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#8b5e3c] mb-4">Goals & Objectives</p>
-                    <div className="w-12 h-0.5 bg-[#c9a96e] mx-auto mb-6"></div>
-                    <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#1b2a3b]">
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#a0522d] mb-4">Goals & Objectives</p>
+                    <div className="w-12 h-0.5 bg-[#f6ac3d] mx-auto mb-6"></div>
+                    <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#8b4513]">
                         What We Work Towards
                     </h2>
                 </div>
@@ -42,10 +42,10 @@ function Goals() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {goals.map((goal, index) => (
                         <div key={index} className="border border-gray-200 bg-white p-8 hover:shadow-md transition-shadow">
-                            <div className="w-11 h-11 bg-[#1b2a3b] flex items-center justify-center mb-5">
-                                <FontAwesomeIcon icon={goal.icon} className="text-[#c9a96e] text-lg" />
+                            <div className="w-11 h-11 bg-[#8b4513] flex items-center justify-center mb-5">
+                                <FontAwesomeIcon icon={goal.icon} className="text-[#f6ac3d] text-lg" />
                             </div>
-                            <h3 className="font-serif text-lg font-semibold text-[#1b2a3b] mb-3">{goal.title}</h3>
+                            <h3 className="font-serif text-lg font-semibold text-[#8b4513] mb-3">{goal.title}</h3>
                             <p className="text-gray-500 text-sm leading-relaxed">{goal.text}</p>
                         </div>
                     ))}

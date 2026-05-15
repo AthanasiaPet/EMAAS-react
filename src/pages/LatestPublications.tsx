@@ -48,11 +48,11 @@ function LatestPublications() {
         <div>
 
             {/* Page Hero */}
-            <section className="bg-[#1b2a3b] py-20 px-6 text-center">
-                <p className="text-[11px] uppercase tracking-[0.14em] text-[#c9a96e] mb-4">Nous Journal</p>
-                <div className="w-10 h-0.5 bg-[#c9a96e] mx-auto mb-5"></div>
+            <section className="bg-[#8b4513] py-20 px-6 text-center">
+                <p className="text-[11px] uppercase tracking-[0.14em] text-[#f6ac3d] mb-4">Nous Journal</p>
+                <div className="w-10 h-0.5 bg-[#f6ac3d] mx-auto mb-5"></div>
                 <h1 className="font-serif text-4xl font-bold text-white mb-5">Latest Publications</h1>
-                <p className="text-gray-400 text-base leading-relaxed max-w-xl mx-auto">
+                <p className="text-white text-base leading-relaxed max-w-xl mx-auto">
                     Academic articles and research publications from the Euro Mediterranean Academy of Arts and Sciences.
                 </p>
             </section>
@@ -61,16 +61,16 @@ function LatestPublications() {
             <section className="bg-[#f8f6f1] py-20 px-6">
                 <div className="max-w-4xl mx-auto flex flex-col gap-8">
                     {publications.map((pub, index) => (
-                        <div key={index} className="bg-white border border-gray-200 border-l-4 border-l-[#c9a96e] p-8 hover:shadow-md transition-shadow">
+                        <div key={index} className="bg-white border border-gray-200 border-l-4 border-l-[#f6ac3d] p-8 hover:shadow-md transition-shadow">
 
                             <p className="text-[11px] uppercase tracking-wider text-gray-400 mb-2">{pub.date}</p>
-                            <h3 className="font-serif text-2xl font-semibold text-[#1b2a3b] mb-2">{pub.title}</h3>
-                            <p className="text-[11px] uppercase tracking-wider text-[#8b5e3c] mb-6">{pub.authors}</p>
+                            <h3 className="font-serif text-2xl font-semibold text-[#8b4513] mb-2">{pub.title}</h3>
+                            <p className="text-[11px] uppercase tracking-wider text-[#a0522d] mb-6">{pub.authors}</p>
 
                             {/* Quotes */}
                             <div className="flex flex-col gap-3 mb-6">
                                 {pub.quotes.map((quote, i) => (
-                                    <p key={i} className="font-serif text-base text-gray-400 italic border-l-2 border-[#c9a96e] pl-4">
+                                    <p key={i} className="font-serif text-base text-gray-400 italic border-l-2 border-[#f6ac3d] pl-4">
                                         {quote}
                                     </p>
                                 ))}
@@ -91,7 +91,7 @@ function LatestPublications() {
                             href={pub.link}
                             target="_blank"
                             rel="noreferrer"
-                            className="inline-flex items-center gap-2 bg-[#1b2a3b] text-[#c9a96e] text-[11px] uppercase tracking-wider px-6 py-3 hover:bg-[#2c4a6e] transition-colors"
+                            className="inline-flex items-center gap-2 bg-[#8b4513] text-[#f6ac3d] text-[11px] uppercase tracking-wider px-6 py-3 hover:bg-[#73390f] transition-colors"
                             >
                             Read Article
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="text-[10px]" />

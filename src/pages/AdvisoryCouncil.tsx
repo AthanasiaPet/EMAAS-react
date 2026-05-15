@@ -14,9 +14,9 @@ function AdvisoryCouncil() {
         <div>
 
             {/* Page Hero */}
-            <section className="bg-[#1b2a3b] py-20 px-6 text-center">
-                <p className="text-[11px] uppercase tracking-[0.14em] text-[#c9a96e] mb-4">Academy</p>
-                <div className="w-10 h-0.5 bg-[#c9a96e] mx-auto mb-5"></div>
+            <section className="bg-[#8b4513] py-20 px-6 text-center">
+                <p className="text-[11px] uppercase tracking-[0.14em] text-[#f6ac3d] mb-4">Academy</p>
+                <div className="w-10 h-0.5 bg-[#f6ac3d] mx-auto mb-5"></div>
                 <h1 className="font-serif text-4xl font-bold text-white mb-5">Advisory Council</h1>
                 <p className="text-gray-400 text-base leading-relaxed max-w-xl mx-auto">
                     Members of the EMAAS Advisory Council are elected for remarkable contributions in their fields and professions to provide advice, guidance, and consultation.
@@ -35,15 +35,15 @@ function AdvisoryCouncil() {
             {/* Members Grid */}
             <section className="bg-[#f8f6f1] py-20 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#8b5e3c] text-center mb-3">Present Members</p>
-                    <div className="w-10 h-0.5 bg-[#c9a96e] mx-auto mb-10"></div>
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#a0522d] text-center mb-3">Present Members</p>
+                    <div className="w-10 h-0.5 bg-[#f6ac3d] mx-auto mb-10"></div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {advisoryMembers.map((member, index) => (
-                            <div key={index} className="bg-white border border-gray-200 border-t-4 border-t-[#c9a96e] p-6 hover:shadow-md transition-shadow">
-                                <div className="w-12 h-12 bg-[#1b2a3b] flex items-center justify-center mb-4">
-                                    <FontAwesomeIcon icon={faUser} className="text-[#c9a96e] text-lg" />
+                            <div key={index} className="bg-white border border-gray-200 border-t-4 border-t-[#f6ac3d] p-6 hover:shadow-md transition-shadow">
+                                <div className="w-12 h-12 bg-[#8b4513] flex items-center justify-center mb-4">
+                                    <FontAwesomeIcon icon={faUser} className="text-[#f6ac3d] text-lg" />
                                 </div>
-                                <h3 className="font-serif text-lg font-semibold text-[#1b2a3b]">{member.name}</h3>
+                                <h3 className="font-serif text-lg font-semibold text-[#8b4513]">{member.name}</h3>
                             </div>
                         ))}
                     </div>

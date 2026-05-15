@@ -82,11 +82,11 @@ function Projects() {
         <div>
 
             {/* Page Hero */}
-            <section className="bg-[#1b2a3b] py-20 px-6 text-center">
-                <p className="text-[11px] uppercase tracking-[0.14em] text-[#c9a96e] mb-4">Activities</p>
-                <div className="w-10 h-0.5 bg-[#c9a96e] mx-auto mb-5"></div>
+            <section className="bg-[#8b4513] py-20 px-6 text-center">
+                <p className="text-[11px] uppercase tracking-[0.14em] text-[#f6ac3d] mb-4">Activities</p>
+                <div className="w-10 h-0.5 bg-[#f6ac3d] mx-auto mb-5"></div>
                 <h1 className="font-serif text-4xl font-bold text-white mb-5">Projects & Events</h1>
-                <p className="text-gray-400 text-base leading-relaxed max-w-xl mx-auto">
+                <p className="text-white text-base leading-relaxed max-w-xl mx-auto">
                     A record of EMAAS conferences, forums, and international collaborations advancing science and sustainability across the Euro-Mediterranean region.
                 </p>
             </section>
@@ -95,18 +95,18 @@ function Projects() {
             <section className="bg-[#f8f6f1] py-20 px-6">
                 <div className="max-w-4xl mx-auto flex flex-col gap-6">
                     {projects.map((project, index) => (
-                        <div key={index} className="bg-white border border-gray-200 border-l-4 border-l-[#c9a96e] p-8 hover:shadow-md transition-shadow">
+                        <div key={index} className="bg-white border border-gray-200 border-l-4 border-l-[#f6ac3d] p-8 hover:shadow-md transition-shadow">
                             <div className="flex flex-wrap gap-4 mb-3 text-[11px] text-gray-400 uppercase tracking-wider">
                 <span className="flex items-center gap-2">
-                  <FontAwesomeIcon icon={faCalendar} className="text-[#c9a96e]" />
+                  <FontAwesomeIcon icon={faCalendar} className="text-[#f6ac3d]" />
                     {project.date}
                 </span>
                                 <span className="flex items-center gap-2">
-                  <FontAwesomeIcon icon={faLocationDot} className="text-[#c9a96e]" />
+                  <FontAwesomeIcon icon={faLocationDot} className="text-[#f6ac3d]" />
                                     {project.location}
                 </span>
                             </div>
-                            <h3 className="font-serif text-xl font-semibold text-[#1b2a3b] mb-3">{project.title}</h3>
+                            <h3 className="font-serif text-xl font-semibold text-[#8b4513] mb-3">{project.title}</h3>
                             <p className="text-gray-500 text-sm leading-relaxed mb-5">{project.excerpt}</p>
                             <div className="flex flex-wrap gap-2">
                                 {project.tags.map((tag, i) => (

@@ -55,11 +55,11 @@ function photoGallery() {
         <div>
 
             {/* Page Hero */}
-            <section className="bg-[#1b2a3b] py-20 px-6 text-center">
-                <p className="text-[11px] uppercase tracking-[0.14em] text-[#c9a96e] mb-4">Activities</p>
-                <div className="w-10 h-0.5 bg-[#c9a96e] mx-auto mb-5"></div>
+            <section className="bg-[#8b4513] py-20 px-6 text-center">
+                <p className="text-[11px] uppercase tracking-[0.14em] text-[#f6ac3d] mb-4">Activities</p>
+                <div className="w-10 h-0.5 bg-[#f6ac3d] mx-auto mb-5"></div>
                 <h1 className="font-serif text-4xl font-bold text-white mb-5">Photo Gallery</h1>
-                <p className="text-gray-400 text-base leading-relaxed max-w-xl mx-auto">
+                <p className="text-white text-base leading-relaxed max-w-xl mx-auto">
                     A visual record of EMAAS events, conferences, and activities across the Euro-Mediterranean region.
                 </p>
             </section>
@@ -81,7 +81,7 @@ function photoGallery() {
                                 />
                             </div>
                             <div className="p-4">
-                                <p className="text-[10px] uppercase tracking-wider text-[#8b5e3c] mb-1">{photo.category}</p>
+                                <p className="text-[10px] uppercase tracking-wider text-[#a0522d] mb-1">{photo.category}</p>
                                 <p className="text-sm text-gray-600 font-serif">{photo.caption}</p>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ function photoGallery() {
                     {/* Close button */}
                     <button
                         onClick={closePhoto}
-                        className="absolute top-6 right-6 text-white hover:text-[#c9a96e] transition-colors"
+                        className="absolute top-6 right-6 text-white hover:text-[#f6ac3d] transition-colors"
                     >
                         <FontAwesomeIcon icon={faXmark} className="text-2xl" />
                     </button>
@@ -104,7 +104,7 @@ function photoGallery() {
                     {/* Prev button */}
                     <button
                         onClick={prevPhoto}
-                        className="absolute left-6 text-white hover:text-[#c9a96e] transition-colors"
+                        className="absolute left-6 text-white hover:text-[#f6ac3d] transition-colors"
                     >
                         <FontAwesomeIcon icon={faChevronLeft} className="text-2xl" />
                     </button>
@@ -123,7 +123,7 @@ function photoGallery() {
                     {/* Next button */}
                     <button
                         onClick={nextPhoto}
-                        className="absolute right-6 text-white hover:text-[#c9a96e] transition-colors"
+                        className="absolute right-6 text-white hover:text-[#f6ac3d] transition-colors"
                     >
                         <FontAwesomeIcon icon={faChevronRight} className="text-2xl" />
                     </button>
