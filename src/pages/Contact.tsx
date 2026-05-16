@@ -59,42 +59,42 @@ function Contact() {
         <div>
 
             {/* Page Hero */}
-            <section className="bg-[#8b4513] py-20 px-6 text-center">
-                <p className="text-[11px] uppercase tracking-[0.14em] text-[#f6ac3d] mb-4">Get in Touch</p>
-                <div className="w-10 h-0.5 bg-[#f6ac3d] mx-auto mb-5"></div>
-                <h1 className="font-serif text-4xl font-bold text-white mb-5">Contact Us</h1>
-                <p className="text-white text-base leading-relaxed max-w-xl mx-auto">
+            <section className="bg-[#ebd2c3] py-20 px-6 text-center">
+                <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] mb-4">Get in Touch</p>
+                <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-5"></div>
+                <h1 className="font-serif text-4xl font-bold text-[#1a1a1a] mb-5">Contact Us</h1>
+                <p className="text-[#5a4a42] text-base leading-relaxed max-w-xl mx-auto">
                     Any mail to the Academy shall be addressed to the following Presidium members.
                 </p>
             </section>
 
             {/* Contact Cards + Form */}
-            <section className="bg-[#f8f6f1] py-20 px-6">
+            <section className="bg-[#ebd2c3] py-10 px-6">
                 <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
 
                     {/* Left — Contact Info */}
                     <div>
-                        <p className="text-[11px] uppercase tracking-[0.14em] text-[#a0522d] mb-3">Presidium Contacts</p>
-                        <div className="w-10 h-0.5 bg-[#f6ac3d] mb-8"></div>
+                        <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] mb-3">Presidium Contacts</p>
+                        <div className="w-10 h-0.5 bg-[#cc3300] mb-8"></div>
 
                         <div className="flex flex-col gap-5">
                             {contacts.map((contact, index) => (
-                                <div key={index} className="bg-white border border-gray-200 border-l-4 border-l-[#f6ac3d] p-6 hover:shadow-md transition-shadow">
+                                <div key={index} className="bg-white/40 border border-[#d4a898] border-l-4 border-l-[#cc3300] p-6 hover:shadow-md transition-shadow">
                                     <div className="flex items-center gap-3 mb-3">
-                                        <div className="w-9 h-9 bg-[#8b4513] flex items-center justify-center shrink-0">
-                                            <FontAwesomeIcon icon={faUser} className="text-[#f6ac3d] text-sm" />
+                                        <div className="w-9 h-9 bg-[#cc3300] flex items-center justify-center shrink-0">
+                                            <FontAwesomeIcon icon={faUser} className="text-white text-sm" />
                                         </div>
                                         <div>
-                                            <p className="font-serif text-base font-semibold text-[#8b4513]">{contact.name}</p>
-                                            <p className="text-[10px] uppercase tracking-wider text-[#a0522d]">{contact.role}</p>
+                                            <p className="font-serif text-base font-semibold text-[#1a1a1a]">{contact.name}</p>
+                                            <p className="text-[10px] uppercase tracking-wider text-[#cc3300]">{contact.role}</p>
                                         </div>
                                     </div>
 
                                     <a
                                     href={`mailto:${contact.email}`}
-                                    className="inline-flex items-center gap-2 text-gray-500 text-sm hover:text-[#a0522d] transition-colors"
+                                    className="inline-flex items-center gap-2 text-[#5a4a42] text-sm hover:text-[#cc3300] transition-colors"
                                     >
-                                    <FontAwesomeIcon icon={faEnvelope} className="text-[#f6ac3d] text-xs" />
+                                    <FontAwesomeIcon icon={faEnvelope} className="text-[#cc3300] text-xs" />
                                     {contact.email}
                                 </a>
                                 </div>
@@ -103,21 +103,21 @@ function Contact() {
 
                         {/* Offices */}
                         <div className="mt-8">
-                            <p className="text-[11px] uppercase tracking-[0.14em] text-[#a0522d] mb-3">Offices</p>
-                            <div className="w-10 h-0.5 bg-[#f6ac3d] mb-6"></div>
+                            <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] mb-3">Offices</p>
+                            <div className="w-10 h-0.5 bg-[#cc3300] mb-6"></div>
                             <div className="flex flex-col gap-4">
                                 <div className="flex items-start gap-3">
-                                    <FontAwesomeIcon icon={faLocationDot} className="text-[#f6ac3d] mt-1 shrink-0" />
+                                    <FontAwesomeIcon icon={faLocationDot} className="text-[#cc3300] mt-1 shrink-0" />
                                     <div>
-                                        <p className="font-serif text-sm font-semibold text-[#8b4513]">Headquarters</p>
-                                        <p className="text-gray-500 text-sm">Sparta, Greece</p>
+                                        <p className="font-serif text-sm font-semibold text-[#1a1a1a]">Headquarters</p>
+                                        <p className="text-[#5a4a42] text-sm">Sparta, Greece</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-3">
-                                    <FontAwesomeIcon icon={faLocationDot} className="text-[#f6ac3d] mt-1 shrink-0" />
+                                    <FontAwesomeIcon icon={faLocationDot} className="text-[#cc3300] mt-1 shrink-0" />
                                     <div>
-                                        <p className="font-serif text-sm font-semibold text-[#8b4513]">Branch Office</p>
-                                        <p className="text-gray-500 text-sm">Lausanne, Switzerland</p>
+                                        <p className="font-serif text-sm font-semibold text-[#1a1a1a]">Branch Office</p>
+                                        <p className="text-[#5a4a42] text-sm">Lausanne, Switzerland</p>
                                     </div>
                                 </div>
                             </div>
@@ -126,67 +126,67 @@ function Contact() {
 
                     {/* Right — Contact Form */}
                     <div>
-                        <p className="text-[11px] uppercase tracking-[0.14em] text-[#a0522d] mb-3">Send a Message</p>
-                        <div className="w-10 h-0.5 bg-[#f6ac3d] mb-8"></div>
+                        <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] mb-3">Send a Message</p>
+                        <div className="w-10 h-0.5 bg-[#cc3300] mb-8"></div>
 
                         {submitted ? (
-                            <div className="bg-white border border-gray-200 border-l-4 border-l-[#f6ac3d] p-8 text-center">
-                                <p className="font-serif text-xl font-semibold text-[#8b4513] mb-3">Message Sent!</p>
-                                <p className="text-gray-500 text-sm">Thank you for reaching out. We will get back to you shortly.</p>
+                            <div className="bg-white/40 border border-[#d4a898] border-l-4 border-l-[#cc3300] p-8 text-center">
+                                <p className="font-serif text-xl font-semibold text-[#1a1a1a] mb-3">Message Sent!</p>
+                                <p className="text-[#5a4a42] text-sm">Thank you for reaching out. We will get back to you shortly.</p>
                             </div>
                         ) : (
                             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                                 <div>
-                                    <label className="block text-[11px] uppercase tracking-wider text-gray-500 mb-2">Full Name</label>
+                                    <label className="block text-[11px] uppercase tracking-wider text-[#5a4a42] mb-2">Full Name</label>
                                     <input
                                         type="text"
                                         name="name"
                                         value={formData.name}
                                         onChange={handleChange}
                                         required
-                                        className="w-full border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-[#f6ac3d] transition-colors"
+                                        className="w-full border border-[#d4a898] bg-white/40 px-4 py-3 text-sm text-[#1a1a1a] focus:outline-none focus:border-[#cc3300] transition-colors"
                                         placeholder="Your full name"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-[11px] uppercase tracking-wider text-gray-500 mb-2">Email</label>
+                                    <label className="block text-[11px] uppercase tracking-wider text-[#5a4a42] mb-2">Email</label>
                                     <input
                                         type="email"
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
                                         required
-                                        className="w-full border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-[#f6ac3d] transition-colors"
+                                        className="w-full border border-[#d4a898] bg-white/40 px-4 py-3 text-sm text-[#1a1a1a] focus:outline-none focus:border-[#cc3300] transition-colors"
                                         placeholder="your@email.com"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-[11px] uppercase tracking-wider text-gray-500 mb-2">Subject</label>
+                                    <label className="block text-[11px] uppercase tracking-wider text-[#5a4a42] mb-2">Subject</label>
                                     <input
                                         type="text"
                                         name="subject"
                                         value={formData.subject}
                                         onChange={handleChange}
                                         required
-                                        className="w-full border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-[#f6ac3d] transition-colors"
+                                        className="w-full border border-[#d4a898] bg-white/40 px-4 py-3 text-sm text-[#1a1a1a] focus:outline-none focus:border-[#cc3300] transition-colors"
                                         placeholder="What is this about?"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-[11px] uppercase tracking-wider text-gray-500 mb-2">Message</label>
+                                    <label className="block text-[11px] uppercase tracking-wider text-[#5a4a42] mb-2">Message</label>
                                     <textarea
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
                                         required
                                         rows={5}
-                                        className="w-full border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-[#f6ac3d] transition-colors resize-none"
+                                        className="w-full border border-[#d4a898] bg-white/40 px-4 py-3 text-sm text-[#1a1a1a] focus:outline-none focus:border-[#cc3300] transition-colors resize-none"
                                         placeholder="Your message..."
                                     />
                                 </div>
                                 <button
                                     type="submit"
-                                    className="bg-[#8b4513] text-[#f6ac3d] text-[11px] uppercase tracking-wider px-8 py-4 hover:bg-[#73390f] transition-colors"
+                                    className="bg-[#cc3300] text-white text-[11px] uppercase tracking-wider px-8 py-4 hover:bg-[#a82800] transition-colors"
                                 >
                                     Send Message
                                 </button>
