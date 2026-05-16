@@ -144,13 +144,13 @@ const departed = [
 
 function MemberCard({ name, date, link }: { name: string; date?: string; link: string | null }) {
     return (
-        <div className="bg-white border border-gray-200 border-l-4 border-l-[#f6ac3d] px-5 py-4 flex items-center justify-between gap-4 hover:shadow-sm transition-shadow">
+        <div className="bg-white/40 border border-[#d4a898] border-l-4 border-l-[#cc3300] px-5 py-4 flex items-center justify-between gap-4 hover:shadow-sm transition-shadow">
             <div>
-                <p className="font-serif text-sm font-semibold text-[#8b4513]">{name}</p>
-                {date && <p className="text-[10px] text-gray-400 uppercase tracking-wider mt-1">{date}</p>}
+                <p className="font-serif text-sm font-semibold text-[#1a1a1a]">{name}</p>
+                {date && <p className="text-[10px] text-[#5a4a42] uppercase tracking-wider mt-1">{date}</p>}
             </div>
             {link && (
-                <a href={link} target="_blank" rel="noreferrer" className="text-[#f6ac3d] text-[10px] uppercase tracking-wider hover:text-[#a0522d] transition-colors shrink-0">
+                <a href={link} target="_blank" rel="noreferrer" className="text-[#cc3300] text-[10px] uppercase tracking-wider hover:text-[#a82800] transition-colors shrink-0">
                     Profile →
                 </a>
             )}
@@ -163,21 +163,21 @@ function Members() {
         <div>
 
             {/* Page Hero */}
-            <section className="bg-[#8b4513] py-20 px-6 text-center">
-                <p className="text-[11px] uppercase tracking-[0.14em] text-[#f6ac3d] mb-4">Academy</p>
-                <div className="w-10 h-0.5 bg-[#f6ac3d] mx-auto mb-5"></div>
-                <h1 className="font-serif text-4xl font-bold text-white mb-5">Members</h1>
-                <p className="text-white text-base leading-relaxed max-w-xl mx-auto">
+            <section className="bg-[#ebd2c3] py-20 px-6 text-center">
+                <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] mb-4">Academy</p>
+                <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-5"></div>
+                <h1 className="font-serif text-4xl font-bold text-[#1a1a1a] mb-5">Members</h1>
+                <p className="text-[#5a4a42] text-base leading-relaxed max-w-xl mx-auto">
                     EMAAS brings together distinguished scientists, scholars and artists from around the world united by a commitment to excellence.
                 </p>
             </section>
 
             {/* Founding Members */}
-            <section className="bg-[#f8f6f1] py-20 px-6">
+            <section className="bg-[#ebd2c3] py-20 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#a0522d] text-center mb-3">Founding Members</p>
-                    <div className="w-10 h-0.5 bg-[#f6ac3d] mx-auto mb-3"></div>
-                    <p className="text-center text-gray-400 text-xs uppercase tracking-wider mb-10">Date of founding: 28-05-2010</p>
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Founding Members</p>
+                    <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-3"></div>
+                    <p className="text-center text-[#5a4a42] text-xs uppercase tracking-wider mb-10">Date of founding: 28-05-2010</p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {foundingMembers.map((member, index) => (
                             <MemberCard key={index} name={member.name} link={member.link} />
@@ -187,10 +187,10 @@ function Members() {
             </section>
 
             {/* Honorary Members */}
-            <section className="bg-white py-16 px-6">
+            <section className="bg-[#d9b8a7] py-16 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#a0522d] text-center mb-3">Honorary Members</p>
-                    <div className="w-10 h-0.5 bg-[#f6ac3d] mx-auto mb-10"></div>
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Honorary Members</p>
+                    <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-10"></div>
                     <div className="grid grid-cols-1 gap-4">
                         {honoraryMembers.map((member, index) => (
                             <MemberCard key={index} name={member.name} link={member.link} />
@@ -200,10 +200,10 @@ function Members() {
             </section>
 
             {/* Members */}
-            <section className="bg-[#f8f6f1] py-20 px-6">
+            <section className="bg-[#ebd2c3] py-20 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#a0522d] text-center mb-3">Members</p>
-                    <div className="w-10 h-0.5 bg-[#f6ac3d] mx-auto mb-10"></div>
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Members</p>
+                    <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-10"></div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {members.map((member, index) => (
                             <MemberCard key={index} name={member.name} date={member.date} link={member.link} />
@@ -213,14 +213,14 @@ function Members() {
             </section>
 
             {/* Departed Members */}
-            <section className="bg-white py-16 px-6">
+            <section className="bg-[#d9b8a7] py-16 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#a0522d] text-center mb-3">Members No Longer With Us</p>
-                    <div className="w-10 h-0.5 bg-[#f6ac3d] mx-auto mb-10"></div>
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Members No Longer With Us</p>
+                    <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-10"></div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {departed.map((name, index) => (
-                            <div key={index} className="bg-[#f8f6f1] border border-gray-200 px-5 py-4">
-                                <p className="font-serif text-sm text-gray-400 italic">{name}</p>
+                            <div key={index} className="bg-white/30 border border-[#d4a898] px-5 py-4">
+                                <p className="font-serif text-sm text-[#5a4a42] italic">{name}</p>
                             </div>
                         ))}
                     </div>
