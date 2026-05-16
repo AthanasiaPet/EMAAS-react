@@ -55,22 +55,22 @@ function photoGallery() {
         <div>
 
             {/* Page Hero */}
-            <section className="bg-[#8b4513] py-20 px-6 text-center">
-                <p className="text-[11px] uppercase tracking-[0.14em] text-[#f6ac3d] mb-4">Activities</p>
-                <div className="w-10 h-0.5 bg-[#f6ac3d] mx-auto mb-5"></div>
-                <h1 className="font-serif text-4xl font-bold text-white mb-5">Photo Gallery</h1>
-                <p className="text-white text-base leading-relaxed max-w-xl mx-auto">
+            <section className="bg-[#ebd2c3] py-20 px-6 text-center">
+                <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] mb-4">Activities</p>
+                <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-5"></div>
+                <h1 className="font-serif text-4xl font-bold text-[#1a1a1a] mb-5">Photo Gallery</h1>
+                <p className="text-[#5a4a42] text-base leading-relaxed max-w-xl mx-auto">
                     A visual record of EMAAS events, conferences, and activities across the Euro-Mediterranean region.
                 </p>
             </section>
 
             {/* Gallery Grid */}
-            <section className="bg-[#f8f6f1] py-20 px-6">
+            <section className="bg-[#ebd2c3] py-20 px-6">
                 <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {photos.map((photo, index) => (
                         <div
                             key={index}
-                            className="group relative overflow-hidden cursor-pointer bg-white border border-gray-200 hover:shadow-lg transition-shadow"
+                            className="group relative overflow-hidden cursor-pointer bg-white/40 border border-[#d4a898] hover:shadow-lg transition-shadow"
                             onClick={() => openPhoto(index)}
                         >
                             <div className="overflow-hidden h-56">
@@ -81,8 +81,8 @@ function photoGallery() {
                                 />
                             </div>
                             <div className="p-4">
-                                <p className="text-[10px] uppercase tracking-wider text-[#a0522d] mb-1">{photo.category}</p>
-                                <p className="text-sm text-gray-600 font-serif">{photo.caption}</p>
+                                <p className="text-[10px] uppercase tracking-wider text-[#cc3300] mb-1">{photo.category}</p>
+                                <p className="text-sm text-[#1a1a1a] font-serif">{photo.caption}</p>
                             </div>
                         </div>
                     ))}
@@ -96,7 +96,7 @@ function photoGallery() {
                     {/* Close button */}
                     <button
                         onClick={closePhoto}
-                        className="absolute top-6 right-6 text-white hover:text-[#f6ac3d] transition-colors"
+                        className="absolute top-6 right-6 text-white hover:text-[#ebd2c3] transition-colors"
                     >
                         <FontAwesomeIcon icon={faXmark} className="text-2xl" />
                     </button>
@@ -104,7 +104,7 @@ function photoGallery() {
                     {/* Prev button */}
                     <button
                         onClick={prevPhoto}
-                        className="absolute left-6 text-white hover:text-[#f6ac3d] transition-colors"
+                        className="absolute left-6 text-white hover:text-[#ebd2c3] transition-colors"
                     >
                         <FontAwesomeIcon icon={faChevronLeft} className="text-2xl" />
                     </button>
@@ -123,7 +123,7 @@ function photoGallery() {
                     {/* Next button */}
                     <button
                         onClick={nextPhoto}
-                        className="absolute right-6 text-white hover:text-[#f6ac3d] transition-colors"
+                        className="absolute right-6 text-white hover:text-[#ebd2c3] transition-colors"
                     >
                         <FontAwesomeIcon icon={faChevronRight} className="text-2xl" />
                     </button>
