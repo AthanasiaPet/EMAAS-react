@@ -26,14 +26,14 @@ const goals = [
 
 function Goals() {
     return (
-        <section className="bg-white px-6 py-24">
+        <section className="bg-[#ebd2c3] px-6 py-24">
             <div className="max-w-6xl mx-auto">
 
                 {/* Section header */}
                 <div className="text-center mb-14">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#a0522d] mb-4">Goals & Objectives</p>
-                    <div className="w-12 h-0.5 bg-[#f6ac3d] mx-auto mb-6"></div>
-                    <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#8b4513]">
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] mb-4">Goals & Objectives</p>
+                    <div className="w-12 h-0.5 bg-[#cc3300] mx-auto mb-6"></div>
+                    <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#1a1a1a]">
                         What We Work Towards
                     </h2>
                 </div>
@@ -41,12 +41,12 @@ function Goals() {
                 {/* Cards grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {goals.map((goal, index) => (
-                        <div key={index} className="border border-gray-200 bg-white p-8 hover:shadow-md transition-shadow">
-                            <div className="w-11 h-11 bg-[#8b4513] flex items-center justify-center mb-5">
-                                <FontAwesomeIcon icon={goal.icon} className="text-[#f6ac3d] text-lg" />
+                        <div key={index} className="border border-[#d4a898] bg-white/20 p-8 hover:shadow-md transition-shadow">
+                            <div className="w-11 h-11 bg-[#cc3300] flex items-center justify-center mb-5">
+                                <FontAwesomeIcon icon={goal.icon} className="text-white text-lg" />
                             </div>
-                            <h3 className="font-serif text-lg font-semibold text-[#8b4513] mb-3">{goal.title}</h3>
-                            <p className="text-gray-500 text-sm leading-relaxed">{goal.text}</p>
+                            <h3 className="font-serif text-lg font-semibold text-[#1a1a1a] mb-3">{goal.title}</h3>
+                            <p className="text-[#1a1a1a] text-sm leading-relaxed">{goal.text}</p>
                         </div>
                     ))}
                 </div>
