@@ -82,37 +82,37 @@ function Projects() {
         <div>
 
             {/* Page Hero */}
-            <section className="bg-[#8b4513] py-20 px-6 text-center">
-                <p className="text-[11px] uppercase tracking-[0.14em] text-[#f6ac3d] mb-4">Activities</p>
-                <div className="w-10 h-0.5 bg-[#f6ac3d] mx-auto mb-5"></div>
-                <h1 className="font-serif text-4xl font-bold text-white mb-5">Projects & Events</h1>
-                <p className="text-white text-base leading-relaxed max-w-xl mx-auto">
+            <section className="bg-[#ebd2c3] py-20 px-6 text-center">
+                <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] mb-4">Research</p>
+                <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-5"></div>
+                <h1 className="font-serif text-4xl font-bold text-[#1a1a1a] mb-5">Projects & Events</h1>
+                <p className="text-[#5a4a42] text-base leading-relaxed max-w-xl mx-auto">
                     A record of EMAAS conferences, forums, and international collaborations advancing science and sustainability across the Euro-Mediterranean region.
                 </p>
             </section>
 
             {/* Projects List */}
-            <section className="bg-[#f8f6f1] py-20 px-6">
+            <section className="bg-[#ebd2c3] py-10 px-6">
                 <div className="max-w-4xl mx-auto flex flex-col gap-6">
                     {projects.map((project, index) => (
-                        <div key={index} className="bg-white border border-gray-200 border-l-4 border-l-[#f6ac3d] p-8 hover:shadow-md transition-shadow">
-                            <div className="flex flex-wrap gap-4 mb-3 text-[11px] text-gray-400 uppercase tracking-wider">
-                <span className="flex items-center gap-2">
-                  <FontAwesomeIcon icon={faCalendar} className="text-[#f6ac3d]" />
-                    {project.date}
-                </span>
+                        <div key={index} className="bg-white/40 border border-[#d4a898] border-l-4 border-l-[#cc3300] p-8 hover:shadow-md transition-shadow">
+                            <div className="flex flex-wrap gap-4 mb-3 text-[11px] text-[#5a4a42] uppercase tracking-wider">
                                 <span className="flex items-center gap-2">
-                  <FontAwesomeIcon icon={faLocationDot} className="text-[#f6ac3d]" />
-                                    {project.location}
-                </span>
+                                  <FontAwesomeIcon icon={faCalendar} className="text-[#cc3300]" />
+                                    {project.date}
+                                </span>
+                                <span className="flex items-center gap-2">
+                                  <FontAwesomeIcon icon={faLocationDot} className="text-[#cc3300]" />
+                                                    {project.location}
+                                </span>
                             </div>
-                            <h3 className="font-serif text-xl font-semibold text-[#8b4513] mb-3">{project.title}</h3>
-                            <p className="text-gray-500 text-sm leading-relaxed mb-5">{project.excerpt}</p>
+                            <h3 className="font-serif text-xl font-semibold text-[#1a1a1a] mb-3">{project.title}</h3>
+                            <p className="text-[#5a4a42] text-sm leading-relaxed mb-5">{project.excerpt}</p>
                             <div className="flex flex-wrap gap-2">
                                 {project.tags.map((tag, i) => (
-                                    <span key={i} className="bg-[#f8f6f1] border border-gray-200 text-[#5a5248] text-[10px] uppercase tracking-wider px-3 py-1">
-                    {tag}
-                  </span>
+                                    <span key={i} className="bg-white/40 border border-[#d4a898] text-[#5a4a42] text-[10px] uppercase tracking-wider px-3 py-1">
+                                    {tag}
+                                  </span>
                                 ))}
                             </div>
                         </div>
