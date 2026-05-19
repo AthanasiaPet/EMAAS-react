@@ -40,10 +40,10 @@ function Navbar() {
                     {/* Logo */}
                     <Link to="/" onClick={closeMobile}>
                         <div className="flex items-center gap-3">
-                            <img src={nano_logo} alt="EMAAS Logo" className="h-18 w-26 object-contain" />
+                            <img src={nano_logo} alt="EMAAS Logo" className="h-12 w-32 object-contain mix-blend-multiply" />
                             <div>
-                                <p className="font-bold text-[#1a1a1a] text-sm leading-tight">EMAAS</p>
-                                <p className="text-[9px] uppercase tracking-widest text-[#1a1a1a]">Euro Mediterranean Academy of arts and sciences</p>
+                                <p className="font-bold text-[#ffcc00] text-sm leading-tight">EMAAS</p>
+                                <p className="text-[9px] uppercase tracking-widest text-[#ffcc00]">Euro Mediterranean Academy of arts and sciences</p>
                             </div>
                         </div>
                     </Link>
@@ -53,7 +53,7 @@ function Navbar() {
 
                         {/* Academy Dropdown */}
                         <div className="relative">
-                            <button onClick={() => toggleDropdown('academy')} className="text-[11px] uppercase tracking-wider text-[#1a1a1a] hover:text-[#ebd2c3] transition-colors flex items-center gap-1">
+                            <button onClick={() => toggleDropdown('academy')} className="text-[11px] uppercase tracking-wider text-[#ffcc00] hover:text-[#ebd2c3] transition-colors flex items-center gap-1">
                                 Academy
                                 <FontAwesomeIcon icon={openDropdown === 'academy' ? faChevronUp : faChevronDown} className="text-[9px]" />
                             </button>
@@ -68,14 +68,14 @@ function Navbar() {
 
                         {/* Members Dropdown */}
                         <div className="relative">
-                            <button onClick={() => toggleDropdown('members')} className="text-[11px] uppercase tracking-wider text-[#1a1a1a] hover:text-[#ebd2c3] transition-colors flex items-center gap-1">
+                            <button onClick={() => toggleDropdown('members')} className="text-[11px] uppercase tracking-wider text-[#ffcc00] hover:text-[#ebd2c3] transition-colors flex items-center gap-1">
                                 Members
                                 <FontAwesomeIcon icon={openDropdown === 'members' ? faChevronUp : faChevronDown} className="text-[9px]" />
                             </button>
                             {openDropdown === 'members' && (
                                 <div className="absolute top-8 left-0 bg-white border border-gray-200 w-48 shadow-md z-50">
-                                    <Link to="/members" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-[#1a1a1a] hover:bg-gray-50 hover:text-[#ebd2c3] transition-colors">Members List</Link>
                                     <Link to="/membership" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-[#1a1a1a] hover:bg-gray-50 hover:text-[#ebd2c3] transition-colors">Membership</Link>
+                                    <Link to="/members" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-[#1a1a1a] hover:bg-gray-50 hover:text-[#ebd2c3] transition-colors">Members List</Link>
                                 </div>
                             )}
                         </div>
@@ -84,7 +84,7 @@ function Navbar() {
                         <div className="relative">
                             <button
                                 onClick={() => toggleDropdown('research')}
-                                className="text-[11px] uppercase tracking-wider text-[#1a1a1a] hover:text-[#ebd2c3] transition-colors flex items-center gap-1"
+                                className="text-[11px] uppercase tracking-wider text-[#ffcc00] hover:text-[#ebd2c3] transition-colors flex items-center gap-1"
                             >
                                 Research
                                 <FontAwesomeIcon icon={openDropdown === 'research' ? faChevronUp : faChevronDown} className="text-[9px]" />
@@ -101,7 +101,7 @@ function Navbar() {
                         <div className="relative">
                             <button
                                 onClick={() => toggleDropdown('activities')}
-                                className="text-[11px] uppercase tracking-wider text-[#1a1a1a] hover:text-[#ebd2c3] transition-colors flex items-center gap-1"
+                                className="text-[11px] uppercase tracking-wider text-[#ffcc00] hover:text-[#ebd2c3] transition-colors flex items-center gap-1"
                             >
                                 Activities
                                 <FontAwesomeIcon icon={openDropdown === 'activities' ? faChevronUp : faChevronDown} className="text-[9px]" />
@@ -116,7 +116,7 @@ function Navbar() {
 
                         {/* Nous Dropdown */}
                         <div className="relative">
-                            <button onClick={() => toggleDropdown('nous')} className="text-[11px] uppercase tracking-wider text-[#1a1a1a] hover:text-[#ebd2c3] transition-colors flex items-center gap-1">
+                            <button onClick={() => toggleDropdown('nous')} className="text-[11px] uppercase tracking-wider text-[#ffcc00] hover:text-[#ebd2c3] transition-colors flex items-center gap-1">
                                 Nous
                                 <FontAwesomeIcon icon={openDropdown === 'nous' ? faChevronUp : faChevronDown} className="text-[9px]" />
                             </button>
@@ -130,7 +130,7 @@ function Navbar() {
 
 
 
-                        <Link to="/contact" className="text-[11px] uppercase tracking-wider text-[#1a1a1a] hover:text-[#ebd2c3] transition-colors">Contact</Link>
+                        <Link to="/contact" className="text-[11px] uppercase tracking-wider text-[#ffcc00] hover:text-[#ebd2c3] transition-colors">Contact</Link>
 
                     </div>
 
@@ -146,7 +146,7 @@ function Navbar() {
 
                 {/* Mobile Menu */}
                 {mobileOpen && (
-                    <div className="md:hidden border-t border-gray-200 py-4 flex flex-col gap-1">
+                    <div className="md:hidden border-t border-gray-200 py-4 flex flex-col gap-1 bg-white">
 
                         <p className="text-[10px] uppercase tracking-widest text-gray-400 px-4 py-2">Academy</p>
                         <Link to="/structure" onClick={closeMobile} className="block px-6 py-2 text-[11px] uppercase tracking-wider text-[#1a1a1a] hover:text-[#ebd2c3] transition-colors">Structure</Link>
