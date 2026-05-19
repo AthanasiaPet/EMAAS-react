@@ -2,7 +2,7 @@ import Hero from '../components/Hero'
 import MissionStrip from '../components/MissionStrip'
 import About from '../components/About'
 import Goals from '../components/Goals'
-import CTA from '../components/CTA'
+// import CTA from '../components/CTA'
 
 function Home() {
     return (
@@ -11,7 +11,7 @@ function Home() {
             <MissionStrip />
             <About />
             <Goals />
-            <CTA />
+            {/*<CTA />*/}
         </div>
     )
 }
