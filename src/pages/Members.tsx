@@ -163,7 +163,7 @@ function Members() {
         <div>
 
             {/* Page Hero */}
-            <section className="bg-[#ebd2c3] py-20 px-6 text-center">
+            <section className="bg-[#ebd2c3] py-15 px-6 text-center">
                 <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] mb-4">Academy</p>
                 <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-5"></div>
                 <h1 className="font-serif text-4xl font-bold text-[#1a1a1a] mb-5">Members</h1>
@@ -173,7 +173,7 @@ function Members() {
             </section>
 
             {/* Founding Members */}
-            <section className="bg-[#ebd2c3] py-20 px-6">
+            <section className="bg-[#ebd2c3] py-15 px-6">
                 <div className="max-w-4xl mx-auto">
                     <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Founding Members</p>
                     <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-3"></div>
@@ -200,7 +200,7 @@ function Members() {
             </section>
 
             {/* Members */}
-            <section className="bg-[#ebd2c3] py-20 px-6">
+            <section className="bg-[#ebd2c3] py-15 px-6">
                 <div className="max-w-4xl mx-auto">
                     <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Members</p>
                     <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-10"></div>

@@ -29,7 +29,7 @@ function GrandPhd() {
         <div>
 
             {/* Page Hero */}
-            <section className="bg-[#ebd2c3] py-20 px-6 text-center">
+            <section className="bg-[#ebd2c3] py-15 px-6 text-center">
                 <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] mb-4">Research</p>
                 <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-5"></div>
                 <h1 className="font-serif text-4xl font-bold text-[#1a1a1a] mb-5">Grand PhD</h1>
@@ -39,7 +39,7 @@ function GrandPhd() {
             </section>
 
             {/* About */}
-            <section className="bg-[#ebd2c3] py-20 px-6">
+            <section className="bg-[#ebd2c3] py-15 px-6">
                 <div className="max-w-3xl mx-auto text-center">
                     <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] mb-3">About the Degree</p>
                     <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-8"></div>
@@ -50,7 +50,7 @@ function GrandPhd() {
             </section>
 
             {/* Requirements */}
-            <section className="bg-[#d9b8a7] py-20 px-6">
+            <section className="bg-[#d9b8a7] py-15 px-6">
                 <div className="max-w-5xl mx-auto">
                     <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Eligibility Requirements</p>
                     <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-10"></div>
@@ -69,7 +69,7 @@ function GrandPhd() {
             </section>
 
             {/* How to Apply */}
-            <section className="bg-[#ebd2c3] py-20 px-6">
+            <section className="bg-[#ebd2c3] py-15 px-6">
                 <div className="max-w-3xl mx-auto">
                     <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">How to Apply</p>
                     <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-10"></div>
