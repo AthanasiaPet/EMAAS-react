@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGraduationCap, faBookOpen, faFileLines, faPalette, faBuilding, faMusic, faPenNib, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGraduationCap, faBookOpen, faFileLines, faPalette, faBuilding, faMusic, faPenNib } from '@fortawesome/free-solid-svg-icons'
 
 const scholarCriteria = [
     { icon: faGraduationCap, title: 'Full Professor Status', text: 'Provided by the university procedure of nomination.' },
@@ -88,26 +88,26 @@ function Membership() {
                 </div>
             </section>
 
-            {/* CTA */}
-            <section className="bg-[#ebd2c3] py-20 px-6 text-center">
-                <div className="max-w-2xl mx-auto">
-                    <h2 className="font-serif text-3xl font-bold text-[#1a1a1a] mb-5">
-                        Ready to Apply?
-                    </h2>
+            {/*/!* CTA *!/*/}
+            {/*<section className="bg-[#ebd2c3] py-20 px-6 text-center">*/}
+            {/*    <div className="max-w-2xl mx-auto">*/}
+            {/*        <h2 className="font-serif text-3xl font-bold text-[#1a1a1a] mb-5">*/}
+            {/*            Ready to Apply?*/}
+            {/*        </h2>*/}
 
-                    <p className="text-[#5a4a42] text-base leading-relaxed mb-8">
-                        Send your application documents to the President of the Academy.
-                    </p>
+            {/*        <p className="text-[#5a4a42] text-base leading-relaxed mb-8">*/}
+            {/*            Send your application documents to the President of the Academy.*/}
+            {/*        </p>*/}
 
-                    <a
-                        href="mailto:kervalpt@yahoo.com"
-                        className="inline-flex items-center gap-3 bg-[#cc3300] text-white text-[14px] tracking-wider px-8 py-4 font-semibold hover:bg-[#a82800] transition-colors"
-                    >
-                        <FontAwesomeIcon icon={faEnvelope} />
-                        kervalpt@yahoo.com
-                    </a>
-                </div>
-            </section>
+            {/*        <a*/}
+            {/*            href="mailto:kervalpt@yahoo.com"*/}
+            {/*            className="inline-flex items-center gap-3 bg-[#cc3300] text-white text-[14px] tracking-wider px-8 py-4 font-semibold hover:bg-[#a82800] transition-colors"*/}
+            {/*        >*/}
+            {/*            <FontAwesomeIcon icon={faEnvelope} />*/}
+            {/*            kervalpt@yahoo.com*/}
+            {/*        </a>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
 
 </div>
 )
