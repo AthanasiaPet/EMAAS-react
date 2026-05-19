@@ -40,7 +40,7 @@ function Navbar() {
                     {/* Logo */}
                     <Link to="/" onClick={closeMobile}>
                         <div className="flex items-center gap-3">
-                            <img src={logo2} alt="EMAAS Logo" className="h-12 w-36 object-contain mix-blend-screen" />
+                            <img src={logo2} alt="EMAAS Logo" className="h-12 w-40 object-contain" />
                             <div>
                                 <p className="font-bold text-[#ffcc00] text-m leading-tight">EMAAS</p>
                                 <p className="font-bold text-[9px] uppercase tracking-widest text-[#ffcc00]">Euro Mediterranean Academy of arts and sciences</p>
