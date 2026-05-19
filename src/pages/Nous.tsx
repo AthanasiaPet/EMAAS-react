@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Nous() {
     return (
         <div>
@@ -50,6 +52,16 @@ function Nous() {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            {/* Latest Publications Button */}
+            <section className="bg-[#ebd2c3] py-8 px-6 text-center">
+                <Link
+                    to="/latest-publications"
+                    className="bg-[#cc3300] text-white text-[11px] uppercase tracking-wider px-8 py-4 hover:bg-[#a82800] transition-colors"
+                >
+                    View Latest Publications
+                </Link>
             </section>
 
         </div>
