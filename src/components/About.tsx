@@ -10,8 +10,8 @@ const cards = [
         text: 'To be a premier international intercontinental Academy setting a distinct standard for global knowledge and academic excellence.',
     },
     {
-        title: 'Grand PhD Program',
-        text: 'A distinctive doctoral program designed for experienced professionals and scientists pursuing global academic recognition.',
+        title: 'A Global Network of Excellence',
+        text: 'EMAAS membership is open to distinguished scientists, scholars, and artists committed to advancing knowledge and fostering international collaboration.',
     },
 ]
 
@@ -33,12 +33,12 @@ function About() {
                     <p className="text-[#1a1a1a] text-base leading-relaxed mb-8">
                         EMAAS builds an action-oriented global network of scholars who forge powerful bonds with each other and with their communities around the globe, embracing all human differences while building upon our commonalities.
                     </p>
-                    <Link
-                        to="/history"
-                        className="bg-[#cc3300] text-white text-[11px] uppercase tracking-wider px-7 py-3 hover:bg-[#a82800] transition-colors"
-                    >
-                        Learn Our History
-                    </Link>
+                    {/*<Link*/}
+                    {/*    to="/history"*/}
+                    {/*    className="bg-[#cc3300] text-white text-[11px] uppercase tracking-wider px-7 py-3 hover:bg-[#a82800] transition-colors"*/}
+                    {/*>*/}
+                    {/*    Learn Our History*/}
+                    {/*</Link>*/}
                 </div>
 
                 {/* Right side - Cards */}
@@ -51,6 +51,22 @@ function About() {
                     ))}
                 </div>
 
+            </div>
+
+            {/* Buttons row — full width below both columns */}
+            <div className="max-w-6xl mx-auto flex gap-2 mt-10 flex-wrap">
+                <Link
+                    to="/history"
+                    className="bg-[#cc3300] text-white text-[11px] uppercase tracking-wider px-7 py-3 hover:bg-[#a82800] transition-colors"
+                >
+                    Learn Our History
+                </Link>
+                <Link
+                    to="/membership"
+                    className="bg-[#cc3300] text-white text-[11px] uppercase tracking-wider px-7 py-3 hover:bg-[#a82800] transition-colors"
+                >
+                     Membership
+                </Link>
             </div>
         </section>
     )
