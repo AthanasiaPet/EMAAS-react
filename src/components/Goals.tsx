@@ -26,7 +26,7 @@ const goals = [
 
 function Goals() {
     return (
-        <section className="bg-[#ebd2c3] px-6 py-24">
+        <section className="bg-[#ebd2c3] px-6 py-6">
             <div className="max-w-6xl mx-auto">
 
                 {/* Section header */}
