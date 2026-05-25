@@ -2,7 +2,7 @@
 A modern redesign of the Euro Mediterranean Academy of Arts and Sciences website, built with React, TypeScript and Tailwind CSS.
 
 ## Live Site
-https://emaas-website.netlify.app/
+https://emaas-color-test.netlify.app/
 
 ## Tech Stack
 - React + TypeScript
