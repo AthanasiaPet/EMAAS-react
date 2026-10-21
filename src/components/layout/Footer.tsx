@@ -19,7 +19,7 @@ function Footer() {
                             <span className="font-serif text-[#1a1a1a] font-semibold">EMAAS</span>
                         </div>
                         <p className="text-[#1a1a1a] text-xs leading-relaxed max-w-xs">
-                            Euro Mediterranean Academy of Arts and Sciences. Headquartered in Sparta, Greece with offices in Lausanne, Switzerland.
+                            Euro Mediterranean Academy of Arts and Sciences. Headquartered in Athens, Greece with offices in Lausanne, Switzerland.
                         </p>
                     </div>
 
@@ -34,7 +34,7 @@ function Footer() {
                         <p className="text-[11px] text-[11px] uppercase tracking-[0.1em] text-[#cc3300] mb-3 font-bold">Research</p>
                         <div className="flex flex-col gap-2 ">
                             <Link to="/projects" className="text-[#1a1a1a] text-sm hover:text-[#cc3300] transition-colors">Projects</Link>
-                            <Link to="/grand-phd" className="text-[#1a1a1a] text-sm hover:text-[#cc3300] transition-colors">Grand PhD</Link>
+                            {/*<Link to="/grand-phd" className="text-[#1a1a1a] text-sm hover:text-[#cc3300] transition-colors">Grand PhD</Link>*/}
                         </div>
                     </div>
 
@@ -63,7 +63,7 @@ function Footer() {
                         <div className="flex flex-col gap-2 ">
                             <div className="flex items-start gap-2 ">
                                 <FontAwesomeIcon icon={faLocationDot} className="text-[#cc3300] text-sm w-4 mt-0.5" />
-                                <span className="text-[#1a1a1a] text-sm">Sparta, Greece</span>
+                                <span className="text-[#1a1a1a] text-sm">Athens, Greece</span>
                             </div>
                             <div className="flex items-start gap-2 ">
                                 <FontAwesomeIcon icon={faLocationDot} className="text-[#cc3300] text-sm w-4 mt-0.5" />
@@ -82,8 +82,8 @@ function Footer() {
 
                 {/* Bottom bar */}
                 <div className="border-t border-[#cc3300] pt-3 flex flex-col md:flex-row justify-between items-center gap-2 ">
-                    <span className="text-[#1a1a1a] text-xs">© 2025 Euro Mediterranean Academy of Arts and Sciences. All rights reserved.</span>
-                    <span className="text-[#1a1a1a] text-xs">Sparta · Lausanne</span>
+                    <span className="text-[#1a1a1a] text-xs">© 2026 Euro Mediterranean Academy of Arts and Sciences. All rights reserved.</span>
+                    {/*<span className="text-[#1a1a1a] text-xs">Athens · Lausanne</span>*/}
                 </div>
 
             </div>

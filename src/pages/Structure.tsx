@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPalette, faFlask } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
 function Structure() {
@@ -24,9 +22,6 @@ function Structure() {
 
                     {/* Order 1 */}
                     <div className="bg-white/40 border border-[#d4a898] border-t-4 border-t-[#cc3300] p-8 hover:shadow-md transition-shadow">
-                        <div className="w-11 h-11 bg-[#cc3300] flex items-center justify-center mb-6">
-                            <FontAwesomeIcon icon={faPalette} className="text-white text-lg" />
-                        </div>
                         <h2 className="font-serif text-xl font-semibold text-[#1a1a1a] mb-4">
                             Order of Arts & Humanities
                         </h2>
@@ -37,9 +32,6 @@ function Structure() {
 
                     {/* Order 2 */}
                     <div className="bg-white/40 border border-[#d4a898] border-t-4 border-t-[#cc3300] p-8 hover:shadow-md transition-shadow">
-                        <div className="w-11 h-11 bg-[#cc3300] flex items-center justify-center mb-6">
-                            <FontAwesomeIcon icon={faFlask} className="text-white text-lg" />
-                        </div>
                         <h2 className="font-serif text-xl font-semibold text-[#1a1a1a] mb-4">
                             Order of Natural Sciences & Engineering
                         </h2>

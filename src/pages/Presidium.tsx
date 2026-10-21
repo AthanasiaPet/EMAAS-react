@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 const presidiumMembers = [
     { name: 'Paata J. Kervalishvili', role: 'President' },
@@ -21,36 +19,50 @@ const presidiumMembers = [
 function Presidium() {
     return (
         <div>
-
             {/* Page Hero */}
-            <section className="bg-[#ebd2c3] py-15 px-6 text-center">
-                <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] mb-4">Academy</p>
+            <section className="bg-[#ebd2c3] pt-15 pb-6 px-6 text-center">
+                <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] mb-4">
+                    Academy
+                </p>
+
                 <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-5"></div>
-                <h1 className="font-serif text-4xl font-bold text-[#1a1a1a] mb-5">Presidium</h1>
+
+                <h1 className="font-serif text-4xl font-bold text-[#1a1a1a] mb-5">
+                    Presidium
+                </h1>
+
                 <p className="text-[#1a1a1a] text-base leading-relaxed max-w-xl mx-auto">
                     The executive leadership of the Euro Mediterranean Academy of Arts and Sciences, guiding the academy's mission and international presence.
                 </p>
             </section>
 
-            {/* Members Grid */}
-            <section className="bg-[#ebd2c3] py-15 px-6">
-                <div className="max-w-5xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Members</p>
-                    <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-10"></div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Presidium Members */}
+            <section className="bg-[#ebd2c3] pt-4 pb-12 px-6">
+                <div className="max-w-2xl mx-auto">
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">
+                        Members
+                    </p>
+
+                    <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-6"></div>
+
+                    <div className="flex flex-col gap-5">
                         {presidiumMembers.map((member, index) => (
-                            <div key={index} className="bg-white/40 border border-[#d4a898] border-t-4 border-t-[#cc3300] p-6 hover:shadow-md transition-shadow">
-                                <div className="w-12 h-12 bg-[#cc3300] flex items-center justify-center mb-4">
-                                    <FontAwesomeIcon icon={faUser} className="text-white text-lg" />
-                                </div>
-                                <h3 className="font-serif text-lg font-semibold text-[#1a1a1a] mb-2">{member.name}</h3>
-                                <p className="text-[11px] uppercase tracking-wider text-[#cc3300]">{member.role}</p>
+                            <div
+                                key={index}
+                                className="bg-white/40 border border-[#d4a898] border-l-4 border-l-[#cc3300] p-6 hover:shadow-md transition-shadow"
+                            >
+                                <h3 className="font-serif text-lg font-semibold text-[#1a1a1a] mb-2">
+                                    {member.name}
+                                </h3>
+
+                                <p className="text-[11px] uppercase tracking-wider text-[#cc3300]">
+                                    {member.role}
+                                </p>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
-
         </div>
     )
 }

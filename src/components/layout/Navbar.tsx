@@ -92,7 +92,7 @@ function Navbar() {
                             {openDropdown === 'research' && (
                                 <div className="absolute top-8 left-0 bg-white border border-gray-200 w-48 shadow-md z-50">
                                     <Link to="/projects" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-[#1a1a1a] hover:bg-gray-50 hover:text-[#ebd2c3] transition-colors">Projects</Link>
-                                    <Link to="/grand-phd" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-[#1a1a1a] hover:bg-gray-50 hover:text-[#ebd2c3] transition-colors">Grand PhD</Link>
+                                    {/*<Link to="/grand-phd" onClick={() => setOpenDropdown(null)} className="block px-4 py-3 text-[11px] uppercase tracking-wider text-[#1a1a1a] hover:bg-gray-50 hover:text-[#ebd2c3] transition-colors">Grand PhD</Link>*/}
                                 </div>
                             )}
                         </div>
