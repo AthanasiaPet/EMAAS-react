@@ -7,7 +7,7 @@ import Structure from './pages/Structure'
 import Presidium from './pages/Presidium'
 import AdvisoryCouncil from './pages/AdvisoryCouncil'
 import Membership from './pages/Membership'
-import GrandPhd from './pages/GrandPhd'
+// import GrandPhd from './pages/GrandPhd'
 import Contact from './pages/Contact'
 import Activities from './pages/Activities'
 import Nous from './pages/Nous'
@@ -31,7 +31,7 @@ function App() {
                 <Route path="/presidium" element={<Presidium />} />
                 <Route path="/advisory-council" element={<AdvisoryCouncil />} />
                 <Route path="/membership" element={<Membership />} />
-                <Route path="/grand-phd" element={<GrandPhd />} />
+                {/*<Route path="/grand-phd" element={<GrandPhd />} />*/}
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/activities" element={<Activities />} />
                 <Route path="/nous" element={<Nous />} />
