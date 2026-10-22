@@ -29,7 +29,7 @@ function AdvisoryCouncil() {
             {/* Present Members */}
             <section className="bg-[#ebd2c3] pt-4 pb-12 px-6">
                 <div className="max-w-2xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] text-center mb-3">
                         Present Members
                     </p>
 

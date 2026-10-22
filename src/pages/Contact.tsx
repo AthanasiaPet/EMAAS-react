@@ -42,7 +42,7 @@ function Contact() {
                 <div className="max-w-5xl mx-auto">
                     {/* Section Heading */}
                     <div className="text-center mb-10">
-                        <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] mb-3">
+                        <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] mb-3">
                             Presidium Contacts
                         </p>
 

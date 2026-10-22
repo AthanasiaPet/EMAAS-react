@@ -56,7 +56,7 @@ function Membership() {
             {/* General Requirements */}
             <section className="bg-[#ebd2c3] pt-8 pb-10 px-6">
                 <div className="max-w-2xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] text-center mb-3">
                         General Requirements
                     </p>
 
@@ -85,7 +85,7 @@ function Membership() {
             {/* Scientific Criteria */}
             <section className="bg-[#ebd2c3] py-10 px-6">
                 <div className="max-w-2xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] text-center mb-3">
                         Criteria for election in scientific & scholarly order
                     </p>
 
@@ -113,7 +113,7 @@ function Membership() {
             {/* Artist Criteria */}
             <section className="bg-[#ebd2c3] py-10 px-6">
                 <div className="max-w-2xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] text-center mb-3">
                         Criteria for election in the artist order
                     </p>
 

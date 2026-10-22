@@ -17,7 +17,7 @@ function Nous() {
             {/* Journal Origin */}
             <section className="bg-[#ebd2c3] py-10 px-6">
                 <div className="max-w-3xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Journal Origin</p>
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] text-center mb-3">Journal Origin</p>
                     <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-10"></div>
                     <div className="bg-white/40 border border-[#d4a898] border-l-4 border-l-[#cc3300] p-8">
                         <p className="text-[#5a4a42] text-base leading-relaxed">
@@ -30,7 +30,7 @@ function Nous() {
             {/* Philosophical Meaning */}
             <section className="bg-[#d9b8a7] py-15 px-6">
                 <div className="max-w-3xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Philosophical Meaning</p>
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] text-center mb-3">Philosophical Meaning</p>
                     <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-10"></div>
                     <div className="flex flex-col gap-6">
                         <div className="bg-white/40 border border-[#d4a898] border-l-4 border-l-[#cc3300] p-8">

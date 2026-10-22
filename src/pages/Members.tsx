@@ -173,9 +173,9 @@ function Members() {
             </section>
 
             {/* Founding Members */}
-            <section className="bg-[#ebd2c3] py-15 px-6">
+            <section className="bg-[#ebd2c3] py-10 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Founding Members</p>
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] text-center mb-3">Founding Members</p>
                     <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-3"></div>
                     <p className="text-center text-[#5a4a42] text-xs uppercase tracking-wider mb-10">Date of founding: 28-05-2010</p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -189,7 +189,7 @@ function Members() {
             {/* Honorary Members */}
             <section className="bg-[#d9b8a7] py-16 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Honorary Members</p>
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] text-center mb-3">Honorary Members</p>
                     <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-10"></div>
                     <div className="grid grid-cols-1 gap-4">
                         {honoraryMembers.map((member, index) => (
@@ -202,7 +202,7 @@ function Members() {
             {/* Members */}
             <section className="bg-[#ebd2c3] py-15 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Members</p>
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] text-center mb-3">Members</p>
                     <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-10"></div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {members.map((member, index) => (
@@ -215,7 +215,7 @@ function Members() {
             {/* Departed Members */}
             <section className="bg-[#d9b8a7] py-16 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#cc3300] text-center mb-3">Members No Longer With Us</p>
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-[#1a1a1a] text-center mb-3">Members No Longer With Us</p>
                     <div className="w-10 h-0.5 bg-[#cc3300] mx-auto mb-10"></div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {departed.map((name, index) => (
