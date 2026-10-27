@@ -9,8 +9,6 @@ https://emaas-test.netlify.app/
 - Vite
 - Tailwind CSS
 - React Router
-- Font Awesome
-- EmailJS (contact form)
 
 ## Getting Started
 npm install
